@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="css/zzsc.css" rel="stylesheet" type="text/css"/>
+
+<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+    $(function(){
+
+        $('.navRight li').mouseenter(function(){
+
+            $(this).children('span').css('transform','rotate(135deg)');
+
+        }).mouseleave(function(){
+
+            $(this).children('span').css('transform','rotate(-45deg)');
+
+        })
+
+        $('.fenlei ul li').mouseenter(function(){
+
+            $(this).stop().animate({'height':'289px'},300).siblings().stop().animate({'height':'44px'},300);
+
+            $(this).siblings().css('background','#F5F5F5');
+
+            $('.fenleiright').fadeTo(0,0.8).stop().animate({'width':'289px'},300);
+
+        }).mouseleave(function(){
+
+            $('.fenlei ul li').stop().animate({'height':'79px'},300)
+
+            $(this).siblings().css('background','#ffffff');
+
+        });
+
+        $('.navLeft').mouseleave(function(){
+
+            $('.fenleiright').stop().animate({'width':'0px'},300);
+
+        })
+
+    })
+
+</script>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+
+<script src="js/jquery-1.7.min.js"></script>
+
+<script type="text/javascript" src="js/common.js?v=725"></script>
+
+<script type="text/javascript" src="js/quick_links.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="helang.love@qq.com">
+    <title>纯CSS水平导航</title>
+    <link rel="stylesheet" href="css/helang.css">
+    <style type="text/css">
+        .info_box{
+            margin: 100px auto 0 auto;
+            width: 400px;
+            background-color: #ffffff;
+            color: #333333;
+            padding:0 0 0 30px;
+        }
+        .info_box>li{
+            padding: 15px 0;
+            font-size: 14px;
+            border-top: #e5e5e5 dashed 1px;
+        }
+        .info_box>li:first-child{
+            list-style: none;
+            font-size: 16px;
+            color: #FD463E;
+            border-top: none;
+            font-weight: bold;
+        }
+        .info_box>li:last-child{
+            list-style: none;
+            font-size: 12px;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="hl_nav">
+    <ul class="nav_list">
+        <li class="active">
+            <a class="nav_head" href="javascipt:;">网站首页</a>
+            <ul class="offset_left">
+                <li><a href="javascipt:;">网站首页-1</a></li>
+                <li><a href="javascipt:;">网站首页-2</a></li>
+                <li><a href="javascipt:;">网站首页-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">在线下载</a>
+            <ul class="offset_left">
+                <li><a href="javascipt:;">在线下载-1</a></li>
+                <li><a href="javascipt:;">在线下载-2</a></li>
+                <li><a href="javascipt:;">在线下载-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">成功案例</a>
+            <ul class="offset_left offset_1">
+                <li><a href="javascipt:;">成功案例-1</a></li>
+                <li><a href="javascipt:;">成功案例-2</a></li>
+                <li><a href="javascipt:;">成功案例-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">新闻动态</a>
+            <ul class="offset_left offset_2">
+                <li><a href="javascipt:;">新闻动态-1</a></li>
+                <li><a href="javascipt:;">新闻动态-2</a></li>
+                <li><a href="javascipt:;">新闻动态-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">与我联系</a>
+            <ul class="offset_left offset_3">
+                <li><a href="javascipt:;">与我联系-1</a></li>
+                <li><a href="javascipt:;">与我联系-2</a></li>
+                <li><a href="javascipt:;">与我联系-3</a></li>
+                <li><a href="javascipt:;">与我联系-4</a></li>
+                <li><a href="javascipt:;">与我联系-5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">资讯栏目</a>
+            <ul class="offset_left offset_5">
+                <li><a href="javascipt:;">资讯栏目-1</a></li>
+                <li><a href="javascipt:;">资讯栏目-2</a></li>
+                <li><a href="javascipt:;">资讯栏目-3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">组织架构</a>
+            <ul class="offset_left offset_6">
+                <li><a href="javascipt:;">组织架构-1</a></li>
+                <li><a href="javascipt:;">组织架构-2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">专业团队</a>
+            <ul class="offset_right offset_2">
+                <li><a href="javascipt:;">专业团队-1</a></li>
+                <li><a href="javascipt:;">专业团队-2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">招贤纳士</a>
+            <ul class="offset_right offset_1">
+                <li><a href="javascipt:;">招贤纳士-1</a></li>
+                <li><a href="javascipt:;">招贤纳士-2</a></li>
+                <li><a href="javascipt:;">招贤纳士-3</a></li>
+                <li><a href="javascipt:;">招贤纳士-4</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">关于我们</a>
+            <ul class="offset_right">
+                <li><a href="javascipt:;">关于我们-1</a></li>
+                <li><a href="javascipt:;">关于我们-2</a></li>
+                <li><a href="javascipt:;">关于我们-3</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="shade"></div>
+</nav>
+<body id="home" style="height:3000px;">
+
+
+
+<!--右侧贴边导航quick_links.js控制-->
+
+<div class="mui-mbar-tabs">
+
+<div class="quick_link_mian">
+
+    <div class="quick_links_panel"><div id="quick_links" class="quick_links"><li><a href="#" class="my_qlinks"><i class="setting"></i></a><div class="ibar_login_box status_login"><div class="avatar_box"><p class="avatar_imgbox"><img src="images/no-img_mid_.jpg" /></p><ul class="user_info"><li>用户名：sl19931003</li><li>级&nbsp;别：普通会员</li></ul></div><div class="login_btnbox"><a href="#" class="login_order">我的订单</a><a href="#" class="login_favorite">我的收藏</a></div><i class="icon_arrow_white"></i></div></li><li id="shopCart"><a href="#" class="message_list" ><i class="message"></i><div class="span">购物车</div><span class="cart_num">0</span></a></li><li><a href="#" class="history_list"><i class="view"></i></a><div class="mp_tooltip" style=" visibility:hidden;">我的资产<i class="icon_arrow_right_black"></i></div></li><li><a href="#" class="mpbtn_histroy"><i class="zuji"></i></a><div class="mp_tooltip">我的足迹<i class="icon_arrow_right_black"></i></div></li><li><a href="#" class="mpbtn_wdsc"><i class="wdsc"></i></a><div class="mp_tooltip">我的收藏<i class="icon_arrow_right_black"></i></div></li><li><a href="#" class="mpbtn_recharge"><i class="chongzhi"></i></a><div class="mp_tooltip">我要充值<i class="icon_arrow_right_black"></i></div></li></div><div class="quick_toggle"><li><a href="#"><i class="kfzx"></i></a><div class="mp_tooltip">客服中心<i class="icon_arrow_right_black"></i></div></li><li><a href="#none"><i class="mpbtn_qrcode"></i></a><div class="mp_qrcode" style="display:none;"><img src="images/weixin_code_145.png" width="148" height="175" /><i class="icon_arrow_white"></i></div></li><li><a href="#top" class="return_top"><i class="top"></i></a></li></div></div>
+
+    <div id="quick_links_pop" class="quick_links_pop hide"></div>
+
+</div>
+
+</div>
+<div id="navOut">
+
+    <div class="nav">
+
+        <div class="navLeft">
+
+            <p>商品类目</p>
+
+            <div class="fenlei">
+
+                <ul>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>男人</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                                <a href="http://www.jq22.com">衣服</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>美食</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">男鞋</a><a href="http://www.jq22.com">男裤</a>
+
+                                <a href="http://www.jq22.com">手表</a><a href="http://www.jq22.com">男卫衣</a>
+
+                                <a href="http://www.jq22.com">nb男鞋</a><a href="http://www.jq22.com">打底衫</a>
+
+                                <a href="http://www.jq22.com">拖鞋</a><a href="http://www.jq22.com">睡衣</a>
+
+                                <a href="http://www.jq22.com">男运动鞋</a><a href="http://www.jq22.com">山地车</a>
+
+                                <a href="http://www.jq22.com">男皮带</a>
+
+                                <a href="http://www.jq22.com">运动裤</a><a href="http://www.jq22.com">男棉裤</a>
+
+                                <a href="http://www.jq22.com">以纯男T恤包</a><a href="http://www.jq22.com">情侣装</a>
+
+                                <a href="http://www.jq22.com">男保暖裤</a><a href="http://www.jq22.com">运动鞋</a>
+
+                                <a href="http://www.jq22.com">男乔丹4代跑鞋</a>
+
+                                <a href="http://www.jq22.com">腰带</a><a href="http://www.jq22.com">男旅行箱</a>
+
+                                <a href="http://www.jq22.com">气垫鞋</a><a href="http://www.jq22.com">板鞋</a>
+
+                                <a href="http://www.jq22.com">温暖一家之主De冬日风采</a><a href="http://www.jq22.com">羽绒服羽绒服中的小立领</a>
+
+                                <a href="http://www.jq22.com">皮衣潮男装</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>女人</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">男鞋</a><a href="http://www.jq22.com">男裤</a>
+
+                                <a href="http://www.jq22.com">手表</a><a href="http://www.jq22.com">男卫衣</a>
+
+                                <a href="http://www.jq22.com">nb男鞋</a><a href="http://www.jq22.com">打底衫</a>
+
+                                <a href="http://www.jq22.com">拖鞋</a><a href="http://www.jq22.com">睡衣</a>
+
+                                <a href="http://www.jq22.com">男运动鞋</a><a href="http://www.jq22.com">山地车</a>
+
+                                <a href="http://www.jq22.com">男皮带</a>
+
+                                <a href="http://www.jq22.com">运动裤</a><a href="http://www.jq22.com">男棉裤</a>
+
+                                <a href="http://www.jq22.com">以纯男T恤包</a><a href="http://www.jq22.com">情侣装</a>
+
+                                <a href="http://www.jq22.com">男保暖裤</a><a href="http://www.jq22.com">运动鞋</a>
+
+                                <a href="http://www.jq22.com">男乔丹4代跑鞋</a>
+
+                                <a href="http://www.jq22.com">腰带</a><a href="http://www.jq22.com">男旅行箱</a>
+
+                                <a href="http://www.jq22.com">气垫鞋</a><a href="http://www.jq22.com">板鞋</a>
+
+                                <a href="http://www.jq22.com">温暖一家之主De冬日风采</a><a href="http://www.jq22.com">羽绒服羽绒服中的小立领</a>
+
+                                <a href="http://www.jq22.com">皮衣潮男装</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>数码</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">男鞋</a><a href="http://www.jq22.com">男裤</a>
+
+                                <a href="http://www.jq22.com">手表</a><a href="http://www.jq22.com">男卫衣</a>
+
+                                <a href="http://www.jq22.com">nb男鞋</a><a href="http://www.jq22.com">打底衫</a>
+
+                                <a href="http://www.jq22.com">拖鞋</a><a href="http://www.jq22.com">睡衣</a>
+
+                                <a href="http://www.jq22.com">男运动鞋</a><a href="http://www.jq22.com">山地车</a>
+
+                                <a href="http://www.jq22.com">男皮带</a>
+
+                                <a href="http://www.jq22.com">运动裤</a><a href="http://www.jq22.com">男棉裤</a>
+
+                                <a href="http://www.jq22.com">以纯男T恤包</a><a href="http://www.jq22.com">情侣装</a>
+
+                                <a href="http://www.jq22.com">男保暖裤</a><a href="http://www.jq22.com">运动鞋</a>
+
+                                <a href="http://www.jq22.com">男乔丹4代跑鞋</a>
+
+                                <a href="http://www.jq22.com">腰带</a><a href="http://www.jq22.com">男旅行箱</a>
+
+                                <a href="http://www.jq22.com">气垫鞋</a><a href="http://www.jq22.com">板鞋</a>
+
+                                <a href="http://www.jq22.com">温暖一家之主De冬日风采</a><a href="http://www.jq22.com">羽绒服羽绒服中的小立领</a>
+
+                                <a href="http://www.jq22.com">皮衣潮男装</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>家具</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">男鞋</a><a href="http://www.jq22.com">男裤</a>
+
+                                <a href="http://www.jq22.com">手表</a><a href="http://www.jq22.com">男卫衣</a>
+
+                                <a href="http://www.jq22.com">nb男鞋</a><a href="http://www.jq22.com">打底衫</a>
+
+                                <a href="http://www.jq22.com">拖鞋</a><a href="http://www.jq22.com">睡衣</a>
+
+                                <a href="http://www.jq22.com">男运动鞋</a><a href="http://www.jq22.com">山地车</a>
+
+                                <a href="http://www.jq22.com">男皮带</a>
+
+                                <a href="http://www.jq22.com">运动裤</a><a href="http://www.jq22.com">男棉裤</a>
+
+                                <a href="http://www.jq22.com">以纯男T恤包</a><a href="http://www.jq22.com">情侣装</a>
+
+                                <a href="http://www.jq22.com">男保暖裤</a><a href="http://www.jq22.com">运动鞋</a>
+
+                                <a href="http://www.jq22.com">男乔丹4代跑鞋</a>
+
+                                <a href="http://www.jq22.com">腰带</a><a href="http://www.jq22.com">男旅行箱</a>
+
+                                <a href="http://www.jq22.com">气垫鞋</a><a href="http://www.jq22.com">板鞋</a>
+
+                                <a href="http://www.jq22.com">温暖一家之主De冬日风采</a><a href="http://www.jq22.com">羽绒服羽绒服中的小立领</a>
+
+                                <a href="http://www.jq22.com">皮衣潮男装</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>母婴</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">男鞋</a><a href="http://www.jq22.com">男裤</a>
+
+                                <a href="http://www.jq22.com">手表</a><a href="http://www.jq22.com">男卫衣</a>
+
+                                <a href="http://www.jq22.com">nb男鞋</a><a href="http://www.jq22.com">打底衫</a>
+
+                                <a href="http://www.jq22.com">拖鞋</a><a href="http://www.jq22.com">睡衣</a>
+
+                                <a href="http://www.jq22.com">男运动鞋</a><a href="http://www.jq22.com">山地车</a>
+
+                                <a href="http://www.jq22.com">男皮带</a>
+
+                                <a href="http://www.jq22.com">运动裤</a><a href="http://www.jq22.com">男棉裤</a>
+
+                                <a href="http://www.jq22.com">以纯男T恤包</a><a href="http://www.jq22.com">情侣装</a>
+
+                                <a href="http://www.jq22.com">男保暖裤</a><a href="http://www.jq22.com">运动鞋</a>
+
+                                <a href="http://www.jq22.com">男乔丹4代跑鞋</a>
+
+                                <a href="http://www.jq22.com">腰带</a><a href="http://www.jq22.com">男旅行箱</a>
+
+                                <a href="http://www.jq22.com">气垫鞋</a><a href="http://www.jq22.com">板鞋</a>
+
+                                <a href="http://www.jq22.com">温暖一家之主De冬日风采</a><a href="http://www.jq22.com">羽绒服羽绒服中的小立领</a>
+
+                                <a href="http://www.jq22.com">皮衣潮男装</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                    <li>
+
+                         <dl class="fenleiLeft">
+
+                            <dt>美妆</dt>
+
+                            <dd>
+
+                                <a href="http://www.jq22.com">男鞋</a><a href="http://www.jq22.com">男裤</a>
+
+                                <a href="http://www.jq22.com">手表</a><a href="http://www.jq22.com">男卫衣</a>
+
+                                <a href="http://www.jq22.com">nb男鞋</a><a href="http://www.jq22.com">打底衫</a>
+
+                                <a href="http://www.jq22.com">拖鞋</a><a href="http://www.jq22.com">睡衣</a>
+
+                                <a href="http://www.jq22.com">男运动鞋</a><a href="http://www.jq22.com">山地车</a>
+
+                                <a href="http://www.jq22.com">男皮带</a>
+
+                                <a href="http://www.jq22.com">运动裤</a><a href="http://www.jq22.com">男棉裤</a>
+
+                                <a href="http://www.jq22.com">以纯男T恤包</a><a href="http://www.jq22.com">情侣装</a>
+
+                                <a href="http://www.jq22.com">男保暖裤</a><a href="http://www.jq22.com">运动鞋</a>
+
+                                <a href="http://www.jq22.com">男乔丹4代跑鞋</a>
+
+                                <a href="http://www.jq22.com">腰带</a><a href="http://www.jq22.com">男旅行箱</a>
+
+                                <a href="http://www.jq22.com">气垫鞋</a><a href="http://www.jq22.com">板鞋</a>
+
+                                <a href="http://www.jq22.com">温暖一家之主De冬日风采</a><a href="http://www.jq22.com">羽绒服羽绒服中的小立领</a>
+
+                                <a href="http://www.jq22.com">皮衣潮男装</a>
+
+                            </dd>
+
+                         </dl>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="fenleiright">
+
+                <dl class="flright">
+
+                    <dt>上衣</dt>
+
+                    <dd>
+
+                        <a href="http://www.jq22.com">白衬衫 </a>
+
+                        <a href="http://www.jq22.com">潮牌</a>
+
+                        <a href="http://www.jq22.com">雪纺衫</a>
+
+                        <a href="http://www.jq22.com">班服</a>
+
+                        <a href="http://www.jq22.com">宽松上衣</a>
+
+                        <a href="http://www.jq22.com">胖人装</a>
+
+                        <a href="http://www.jq22.com">棉衬衫</a>
+
+                        <a href="http://www.jq22.com">学院风</a>
+
+                        <a href="http://www.jq22.com"> 中长款装</a>
+
+                    </dd>
+
+                </dl>
+
+                <dl class="flright">
+
+                    <dt>下装</dt>
+
+                    <dd>
+
+                        <a href="http://www.jq22.com">白衬衫 </a>
+
+                        <a href="http://www.jq22.com">潮牌</a>
+
+                        <a href="http://www.jq22.com">雪纺衫</a>
+
+                        <a href="http://www.jq22.com">班服</a>
+
+                        <a href="http://www.jq22.com">宽松上衣</a>
+
+                        <a href="http://www.jq22.com">胖人装</a>
+
+                        <a href="http://www.jq22.com">棉衬衫</a>
+
+                        <a href="http://www.jq22.com">学院风</a>
+
+                        <a href="http://www.jq22.com"> 中长款装</a>
+
+                    </dd>
+
+                </dl>
+
+                <dl class="flright">
+
+                    <dt>鞋子</dt>
+
+                    <dd>
+
+                        <a href="http://www.jq22.com">白衬衫 </a>
+
+                        <a href="http://www.jq22.com">潮牌</a>
+
+                        <a href="http://www.jq22.com">雪纺衫</a>
+
+                        <a href="http://www.jq22.com">班服</a>
+
+                        <a href="http://www.jq22.com">宽松上衣</a>
+
+                        <a href="http://www.jq22.com">胖人装</a>
+
+                        <a href="http://www.jq22.com">棉衬衫</a>
+
+                        <a href="http://www.jq22.com">学院风</a>
+
+                        <a href="http://www.jq22.com"> 中长款装</a>
+
+                    </dd>
+
+                </dl>
+
+                <dl class="flright">
+
+                    <dt>内衣</dt>
+
+                    <dd>
+
+                        <a href="http://www.jq22.com">白衬衫 </a>
+
+                        <a href="http://www.jq22.com">潮牌</a>
+
+                        <a href="http://www.jq22.com">雪纺衫</a>
+
+                        <a href="http://www.jq22.com">班服</a>
+
+                        <a href="http://www.jq22.com">宽松上衣</a>
+
+                        <a href="http://www.jq22.com">胖人装</a>
+
+                        <a href="http://www.jq22.com">棉衬衫</a>
+
+                        <a href="http://www.jq22.com">学院风</a>
+
+                        <a href="http://www.jq22.com"> 中长款装</a>
+
+                    </dd>
+
+                </dl>
+
+                <dl class="flright">
+
+                    <dt>帽子</dt>
+
+                    <dd>
+
+                        <a href="http://www.jq22.com">白衬衫 </a>
+
+                        <a href="http://www.jq22.com">潮牌</a>
+
+                        <a href="http://www.jq22.com">雪纺衫</a>
+
+                        <a href="http://www.jq22.com">班服</a>
+
+                        <a href="http://www.jq22.com">宽松上衣</a>
+
+                        <a href="http://www.jq22.com">胖人装</a>
+
+                        <a href="http://www.jq22.com">棉衬衫</a>
+
+                        <a href="http://www.jq22.com">学院风</a>
+
+                        <a href="http://www.jq22.com"> 中长款装</a>
+
+                    </dd>
+
+                </dl>
+
+            </div>
+
+        </div>
+
+        <ul class="navRight">
+
+            <li><a href="http://www.jq22.com">单品</a><span></span></li>
+
+            <li><a href="http://www.jq22.com">特惠</a></li>
+
+            <li><a href="http://www.jq22.com">搭配</a></li>
+
+            <li><a href="http://www.jq22.com">专辑</a><span></span></li>
+
+            <li><a href="http://www.jq22.com">主题</a><span></span></li>
+
+            <li><a href="http://www.jq22.com">店铺</a></li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div id="banner">
+
+    <div class="pic">
+
+        <img src="img/banner.jpg"/>
+
+    </div>
+
+</div>
+
+</body>
+</body>
+</html>
